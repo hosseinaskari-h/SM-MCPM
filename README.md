@@ -5,6 +5,7 @@ State-Modulated Monte Carlo Physarum Machine
 This repository contains the reference implementation for **SM-MCPM**, a computational framework extending classical *Physarum polycephalum* models with behavioral state machines and metabolic energy constraints.
 
 The associated paper, *"SM-MCPM: State-Modulated Monte Carlo Physarum Machine for Energy-Constrained Collective Navigation,"* details the methodology, mathematical formulation, and experimental results reproduced by this codebase.
+Available preprint link : https://doi.org/10.13140/RG.2.2.13933.24803
 
 ## Overview
 
