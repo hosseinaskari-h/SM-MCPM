@@ -24,3 +24,22 @@ To install the necessary dependencies:
 
 ```bash
 pip install taichi numpy matplotlib pyyaml
+```
+
+## Usage
+
+### Reproducing Experiments
+
+The `experiments.py` script is configured to replicate the specific scenarios described in the paper (Tables 4–5 and Figures 2–3). It performs the following:
+
+1.  **Full System Analysis:** Runs $N=10$ trials of the complete SM-MCPM model.
+2.  **Ablation Study:** Runs $N=10$ trials of a baseline model without state modulation.
+3.  **Infrastructure Analysis:** Compares performance between environments with and without recharge nodes.
+
+To execute the full suite of experiments:
+
+```bash
+python experiments.py
+
+```
+Results, including high-resolution figures and statistical summaries, will be output to the outputs/ directory.
