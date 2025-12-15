@@ -1,0 +1,87 @@
+# SM-MCPM Default Configuration
+
+# Simulation settings
+simulation:
+  width: 1280
+  height: 720
+  dt: 0.016  # 60 FPS
+
+# Agent parameters
+agents:
+  count: 10000
+  base_speed: 50.0
+  sensor_distance: 35.0
+  sensor_angle: 30.0  # degrees
+  turn_speed: 60.0
+  deposit_strength: 0.5
+
+# Energy system
+energy:
+  hunger_decay: 0.02
+  scouting_multiplier: 4.0
+  objective_drain: 2
+  vein_hunger_reduction: 0.6
+  low_energy_threshold: 0.3
+  recharge_threshold: 0.6
+  full_energy_threshold: 0.9
+
+# Trail/diffusion
+trails:
+  decay_rate: 0.5
+
+# Vein formation
+veins:
+  formation_threshold: 10.0  
+  solidify_rate: 0.5  
+  decay_rate: 0.005  
+  orphan_decay_rate: 0.1
+  speed_multiplier: 1.5
+
+# Node parameters
+nodes:
+  radius: 40.0
+  max_nodes: 10
+  min_node_distance: 100.0
+
+# Objective
+objective:
+  position: [1200, 360]
+  radius: 30.0
+  scent_strength: 1.0
+  scent_falloff: 200.0
+  time_at_objective: 3.0
+
+# Core
+core:
+  position: [240, 360]
+  radius: 80.0
+
+# Environment ( Not used in current paper)
+environment:
+  type: "empty"  # Options: empty, procedural, from_image, preset
+  # barriers: []
+  # hazards: []
+  # map_image: "maps/maze_01.png"
+
+# Placement algorithm ( Not used in current paper)
+placement:
+  death_weight: 0.7
+  trail_weight: 0.3
+  proximity_penalty: 0.5
+  min_score_threshold: 0.3
+
+# Phase durations (simulation seconds)
+phases:
+  phase1_duration: 300.0
+  phase2_iteration_duration: 150.0
+  phase3_duration: 500.0
+
+# Stopping criteria
+stopping:
+  target_survival_rate: 0.7
+  min_improvement: 0.05
+
+# Output settings
+output:
+  save_dir: "outputs"
+  show_realtime: true
